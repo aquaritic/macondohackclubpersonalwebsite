@@ -1,8 +1,8 @@
 let cookies = 0;
 let Grandma = 0;
-let cookies = localStorage.getItem("count");
+let cookies = localStorage.getItem("cookies");
 
-const cookieDisplay = document.getElementById("cookie");
+const cookieDisplay = document.getElementById("cookies");
 const increaseBtn = document.getElementById("increase");
 const decreaseBtn = document.getElementById("decrease");
 const plusFiveBtn = document.getElementById("plusFive");
@@ -76,7 +76,7 @@ document.addEventListener("keydown"), (event) =>{
 
     countDisplay.textContent = count;
     updateColor();
-    savenCount();
+    saveCount();
 }
 
 if (count === null) {
