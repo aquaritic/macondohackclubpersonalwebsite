@@ -1,5 +1,5 @@
 # Personal Website
-A site I built as part of the macondo hackclub event, learning how to code in HTML for the first time.
+A cookie clicker game as part of my first ever coding project, started for the Macondo Hack Club event!
 
 ## Preview
 
