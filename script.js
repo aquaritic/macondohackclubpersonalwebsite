@@ -4,9 +4,10 @@ let cookies = Number(localStorage.getItem("cookies")) || 0
 const cookieDisplay = document.getElementById("cookies");
 const increaseBtn = document.getElementById("increase");
 const buyNebula = document.getElementById("Multiplier")
+cookieDisplay.textContent = cookies;
 
 buyNebula.addEventListener("click", () => {
-    if (cookies == 100){
+    if (cookies >= 100){
         cookies-=100;
         multiplier +=1;
         updateColor();
@@ -19,9 +20,8 @@ increaseBtn.addEventListener("click", () => {
     cookies++
     cookieDisplay.textContent = cookies;
     updateColor();
-    multiplier();
+    multiplierBoost();
     saveCount();
-    console.log("clicked");
 });
 
 function updateColor() {
@@ -34,16 +34,8 @@ function updateColor() {
     }
 }
 
-function multiplier() {
-    if (multiplier == 1){
-        cookies+=1;
-    }
-}
-
-if (cookies === null) {
-    cookies = 0;
-} else {
-    cookies = Number(cookies);
+function multiplierBoost() {
+    cookies += multiplier;
 }
 
 function saveCount() {
