@@ -1,4 +1,3 @@
-let cookies = 0;
 let Multiplier = 0;
 let cookies = Number(localStorage.getItem("cookies")) || 0
 
