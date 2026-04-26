@@ -6,7 +6,7 @@ const increaseBtn = document.getElementById("increase");
 const decreaseBtn = document.getElementById("decrease");
 const plusFiveBtn = document.getElementById("plusFive");
 const minusFiveBtn = document.getElementById("minusFive");
-const buyNebula = document.getElementById("Nebula")
+const buyNebula = document.getElementById("Multiplier")
 const resetBtn = document.getElementById("reset");
 
 buyNebula.addEventListener("click", () => {
@@ -15,6 +15,7 @@ buyNebula.addEventListener("click", () => {
         Multiplier +=1;
         updateColor();
         saveCount();
+        cookieDisplay.textContent = cookies;
     }
 });
 
@@ -24,6 +25,7 @@ increaseBtn.addEventListener("click", () => {
     updateColor();
     multiplier();
     saveCount();
+    console.log("clicked");
 });
 
 decreaseBtn.addEventListener("click", () => {
@@ -70,16 +72,16 @@ function updateColor() {
 }
 
 function multiplier() {
-    if (Multipler == 1){
+    if (Multiplier == 1){
         cookies+=1;
     }
 }
 
-document.addEventListener("keydown"), (event) =>{
+document.addEventListener("keydown"), (event) => {
     if (event.key === "ArrowUp") {
         cookies++;
         multiplier();
-    } else if (event.key === "ArrownDown") {
+    } else if (event.key === "ArrowDown") {
         cookies--;
     }
 
