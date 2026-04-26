@@ -1,9 +1,11 @@
-let multiplier = 0;
-let cookies = Number(localStorage.getItem("cookies")) || 0
+let multiplier = Number(localStorage.getItem("multiplier")) || 0;
+let autoclicker = Number(localStorage.getItem("autoclicker")) || 0;
+let cookies = Number(localStorage.getItem("cookies")) || 0;
 
 const cookieDisplay = document.getElementById("cookies");
 const increaseBtn = document.getElementById("increase");
-const buyNebula = document.getElementById("Multiplier")
+const buyNebula = document.getElementById("Multiplier");
+const buyAutoclicker = document.getElementById("auto");
 cookieDisplay.textContent = cookies;
 
 buyNebula.addEventListener("click", () => {
@@ -16,11 +18,27 @@ buyNebula.addEventListener("click", () => {
     }
 });
 
-increaseBtn.addEventListener("click", () => {
-    cookies++
+setInterval(() => {
+    cookies += autoclicker;
     cookieDisplay.textContent = cookies;
     updateColor();
-    multiplierBoost();
+    saveCount();
+}, 100);
+
+buyAutoclicker.addEventListener("click", () => {
+    if (cookies >= 1000){
+        cookies -= 1000;
+        autoclicker += 1;
+        updateColor();
+        saveCount();
+        cookieDisplay.textContent = cookies;
+    }
+})
+
+increaseBtn.addEventListener("click", () => {
+    cookies+= 1 + multiplier;
+    cookieDisplay.textContent = cookies;
+    updateColor();
     saveCount();
 });
 
@@ -40,4 +58,6 @@ function multiplierBoost() {
 
 function saveCount() {
     localStorage.setItem("cookies", cookies);
+    localStorage.setItem("multiplier", multiplier);
+    localStorage.setItem("autoclicker", autoclicker);
 }
