@@ -6,14 +6,17 @@ const cookieDisplay = document.getElementById("cookies");
 const increaseBtn = document.getElementById("increase");
 const buyNebula = document.getElementById("multiplier");
 const buyAutoclicker = document.getElementById("auto");
+const autoDisplay = document.getElementById("A");
+const multiDisplay = document.getElementById("M");
 
 buyNebula.addEventListener("click", () => {
-    if (cookies >= 100){
+    if (cookies >= 100*multiplier){
         cookies-=100;
         multiplier +=1;
         updateColor();
         saveCount();
         cookieDisplay.textContent = cookies;
+        multiDisplay.textContent = multiplier;
     }
 });
 
@@ -25,12 +28,13 @@ setInterval(() => {
 }, 100);
 
 buyAutoclicker.addEventListener("click", () => {
-    if (cookies >= 1000){
+    if (cookies >= 1000*autoclicker){
         cookies -= 1000;
         autoclicker += 1;
         updateColor();
         saveCount();
         cookieDisplay.textContent = cookies;
+        autoDisplay.textContent = autoclicker;
     }
 })
 

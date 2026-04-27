@@ -1,4 +1,8 @@
 body {
+    background-image: url("https://as1.ftcdn.net/v2/jpg/05/72/78/82/1000_F_572788249_Lpiz0SMKEh1XU4y3Lj7NXjZW89yXw4ZC.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     font-family: Times, sans-serif;
     color:black;
     display: flex;
