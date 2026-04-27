@@ -12,7 +12,7 @@ const autoDisplay = document.getElementById("A");
 const multiDisplay = document.getElementById("M");
 
 buyNebula.addEventListener("click", () => {
-    if (cookies >= 100*(1+multiplier){
+    if (cookies >= 100*(1+multiplier)){
         cookies-=100;
         multiplier +=1;
         updateColor();
@@ -30,7 +30,7 @@ setInterval(() => {
 }, 800);
 
 buyAutoclicker.addEventListener("click", () => {
-    if (cookies >= 1000*(1+autoclicker){
+    if (cookies >= 1000*(1+autoclicker)){
         cookies -= 1000;
         autoclicker += 1;
         updateColor();
