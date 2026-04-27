@@ -6,7 +6,6 @@ const cookieDisplay = document.getElementById("cookies");
 const increaseBtn = document.getElementById("increase");
 const buyNebula = document.getElementById("multiplier");
 const buyAutoclicker = document.getElementById("auto");
-cookieDisplay.textContent = cookies;
 
 buyNebula.addEventListener("click", () => {
     if (cookies >= 100){
