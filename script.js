@@ -13,36 +13,38 @@ const multiDisplay = document.getElementById("M");
 
 buyNebula.addEventListener("click", () => {
     if (cookies >= 100*(1+multiplier)){
-        cookies-=100;
+        cookies-=100*(1+multiplier);
         multiplier +=1;
         updateColor();
         saveCount();
-        cookieDisplay.textContent = cookies;
-        multiDisplay.textContent = multiplier;
+        cookieDisplay.textContent = "Atoms: " + cookies;
+        multiDisplay.textContent = "Multiplier: " + multiplier;
+        buyNebula.textContent = "Buy Nebula - Cost: " + 100*(1+multiplier);
     }
 });
 
 setInterval(() => {
     cookies += autoclicker;
-    cookieDisplay.textContent = cookies;
+    cookieDisplay.textContent = "Atoms: " + cookies;
     updateColor();
     saveCount();
 }, 800);
 
 buyAutoclicker.addEventListener("click", () => {
     if (cookies >= 1000*(1+autoclicker)){
-        cookies -= 1000;
+        cookies -= 1000*(1+autoclicker);
         autoclicker += 1;
         updateColor();
         saveCount();
-        cookieDisplay.textContent = cookies;
-        autoDisplay.textContent = autoclicker;
+        cookieDisplay.textContent = "Atoms: " + cookies;
+        autoDisplay.textContent = "Autoclicks: " + autoclicker;
+        buyAutoclicker.textContent = "Buy Autoclicker - Cost: " + 1000*(1+autoclicker);
     }
 })
 
 increaseBtn.addEventListener("click", () => {
     addCookies();
-    cookieDisplay.textContent = cookies;
+    cookieDisplay.textContent = "Atoms: " + cookies;
     updateColor();
     saveCount();
 });
