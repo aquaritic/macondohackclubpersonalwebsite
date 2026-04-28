@@ -18,8 +18,16 @@ body {
 
 button {
     font-size: 20px;
-    color:black;
+    color:white;
+    background-color: black;
     margin: 10px;
     padding: 10px 20px;
     cursor: pointer;
+}
+
+.statistics {
+    font-family: Times;
+    color:whitesmoke;
+    top: 0;
+    right: 0;
 }
