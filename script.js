@@ -61,3 +61,5 @@ cookieDisplay.style.color = "white";
 cookieDisplay.textContent = "Atoms: " + cookies;
 multiDisplay.textContent = "Multiplier: " + multiplier;
 autoDisplay.textContent = "Autoclicks: " + autoclicker;
+buyAutoclicker.textContent = "Buy Autoclicker - Cost: " + 1000*(1+autoclicker);
+buyNebula.textContent = "Buy Nebula - Cost: " + 100*(1+multiplier);
