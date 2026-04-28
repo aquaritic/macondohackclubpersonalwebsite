@@ -49,14 +49,6 @@ increaseBtn.addEventListener("click", () => {
     saveCount();
 });
 
-function updateColor() {
-    if (cookies > 0) {
-        cookieDisplay.style.color = "green";
-    } else {
-        cookieDisplay.style.color = "black";
-    }
-}
-
 function addCookies() {
     cookies += 1 + multiplier;
 }
@@ -68,3 +60,5 @@ function saveCount() {
     localStorage.setItem("M", multiplier);
     localStorage.setItem("A", autoclicker);
 }
+
+cookieDisplay.style.color = "white";
