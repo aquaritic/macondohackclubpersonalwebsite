@@ -21,13 +21,14 @@ button {
     color:white;
     background-color: black;
     margin: 10px;
-    padding: 10px 20px;
+    padding: 40px 80px;
     cursor: pointer;
 }
 
 .statistics {
     font-family: Times;
     color:whitesmoke;
-    top: 0;
+    text-align: end right;
+    text-align: top;
     right: 0;
 }
