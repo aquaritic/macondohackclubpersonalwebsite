@@ -33,7 +33,7 @@ buyProto.addEventListener("click", () => {
     }
 });
 
-buyTauri.addEventListener("click", () => {
+tauri.addEventListener("click", () => {
     if (cookies >= 50000){
         cookies -= 50000;
         multiplier += 5;
@@ -42,7 +42,7 @@ buyTauri.addEventListener("click", () => {
     }
 });
 
-buyLM.addEventListener("click", () => {
+low.addEventListener("click", () => {
     if(cookies >= 100000){
         cookies-= 100000
         multiplier+= 10;
@@ -51,7 +51,7 @@ buyLM.addEventListener("click", () => {
     }
 });
 
-buyHM.addEventListener("click", () => {
+high.addEventListener("click", () => {
     if(cookies >=150000){
         cookies-=150000;
         multiplier+=25;
