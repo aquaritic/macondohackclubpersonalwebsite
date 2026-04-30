@@ -21,6 +21,7 @@ buyNebula.addEventListener("click", () => {
         multiplier +=1;
         saveCount();
         saveDisplay();
+        buyNebula.style.display = "none";
     }
 });
 
@@ -30,6 +31,7 @@ buyProto.addEventListener("click", () => {
         multiplier +=1;
         saveCount();
         saveDisplay();
+        buyProto.style.display = "none";
     }
 });
 
@@ -39,6 +41,7 @@ tauri.addEventListener("click", () => {
         multiplier += 5;
         saveCount();
         saveDisplay();
+        tauri.style.display = "none";
     }
 });
 
@@ -48,6 +51,7 @@ low.addEventListener("click", () => {
         multiplier+= 10;
         saveCount();
         saveDisplay();
+        low.style.display = "none";
     }
 });
 
@@ -57,6 +61,7 @@ high.addEventListener("click", () => {
         multiplier+=25;
         saveCount();
         saveDisplay();
+        high.style.display = "none";
     }
 });
 
