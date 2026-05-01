@@ -36,8 +36,8 @@ buyProto.addEventListener("click", () => {
 });
 
 tauri.addEventListener("click", () => {
-    if (cookies >= 50000){
-        cookies -= 50000;
+    if (cookies >= 15000){
+        cookies -= 15000;
         multiplier += 5;
         saveCount();
         saveDisplay();
@@ -46,8 +46,8 @@ tauri.addEventListener("click", () => {
 });
 
 low.addEventListener("click", () => {
-    if(cookies >= 100000){
-        cookies-= 100000
+    if(cookies >= 25000){
+        cookies-= 25000
         multiplier+= 10;
         saveCount();
         saveDisplay();
@@ -56,8 +56,8 @@ low.addEventListener("click", () => {
 });
 
 high.addEventListener("click", () => {
-    if(cookies >=150000){
-        cookies-=150000;
+    if(cookies >=50000){
+        cookies-=50000;
         multiplier+=25;
         saveCount();
         saveDisplay();
