@@ -22,6 +22,8 @@ buyNebula.addEventListener("click", () => {
         saveCount();
         saveDisplay();
         buyNebula.style.display = "none";
+    } else {
+        alert("Not enough atoms!");
     }
 });
 
@@ -32,6 +34,8 @@ buyProto.addEventListener("click", () => {
         saveCount();
         saveDisplay();
         buyProto.style.display = "none";
+    } else {
+        alert("Not enough atoms!");
     }
 });
 
@@ -42,6 +46,8 @@ tauri.addEventListener("click", () => {
         saveCount();
         saveDisplay();
         tauri.style.display = "none";
+    } else {
+        alert("Not enough atoms!");
     }
 });
 
@@ -52,6 +58,8 @@ low.addEventListener("click", () => {
         saveCount();
         saveDisplay();
         low.style.display = "none";
+    } else {
+        alert("Not enough atoms!");
     }
 });
 
@@ -62,6 +70,8 @@ high.addEventListener("click", () => {
         saveCount();
         saveDisplay();
         high.style.display = "none";
+    } else {
+        alert("Not enough atoms!");
     }
 });
 
@@ -77,6 +87,8 @@ buyAutoclicker.addEventListener("click", () => {
         autoclicker += 1;
         saveCount();
         saveDisplay();
+    } else {
+        alert("Not enough atoms!");
     }
 });
 
